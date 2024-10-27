@@ -8,6 +8,11 @@ import os
 
 app = FastAPI()
 
+@app.get("/hoos")
+def greet():
+    return {"message": "go hoos!"}
+
+
 @app.get("/")  # zone apex
 def zone_apex():
     return {"Good Day Sunshine": "Ben!"}
