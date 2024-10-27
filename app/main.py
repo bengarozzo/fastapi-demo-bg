@@ -28,3 +28,7 @@ def square(a: int):
 @app.get("/multiply/{c}/{d}")
 def multiply(c:int, d: int):
         return{"product": c * d}
+
+@app.get("/goodbye")
+def say_goodbye():
+    return {"message": "Goodbye!"}
